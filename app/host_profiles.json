@@ -1,0 +1,133 @@
+{
+  "machine": {
+    "name": "课程设计机械臂平台",
+    "axes": [
+      {
+        "name": "J1",
+        "home_deg": 90.0,
+        "min_deg": -170.0,
+        "max_deg": 170.0,
+        "positive_dir": "CCW",
+        "reduction_ratio": 50.0,
+        "max_speed_deg_s": 45.0,
+        "accel_deg_s2": 120.0,
+        "motor_current_a": 1.6,
+        "steps_per_deg": 50.0
+      },
+      {
+        "name": "J2",
+        "home_deg": 90.0,
+        "min_deg": -89.50000000000003,
+        "max_deg": 120.0,
+        "positive_dir": "CW",
+        "reduction_ratio": 50.89,
+        "max_speed_deg_s": 41.49999999999999,
+        "accel_deg_s2": 120.0,
+        "motor_current_a": 1.8,
+        "steps_per_deg": 452.36
+      },
+      {
+        "name": "J3",
+        "home_deg": -90.0,
+        "min_deg": -135.39999999999998,
+        "max_deg": 135.0,
+        "positive_dir": "CW",
+        "reduction_ratio": 50.89,
+        "max_speed_deg_s": 41.39999999999999,
+        "accel_deg_s2": 120.0,
+        "motor_current_a": 1.8,
+        "steps_per_deg": 452.36
+      },
+      {
+        "name": "J4",
+        "home_deg": 0.0,
+        "min_deg": -180.0,
+        "max_deg": 180.0,
+        "positive_dir": "CW",
+        "reduction_ratio": 51.0,
+        "max_speed_deg_s": 89.30000000000004,
+        "accel_deg_s2": 180.0,
+        "motor_current_a": 1.2,
+        "steps_per_deg": 453.33
+      },
+      {
+        "name": "J5",
+        "home_deg": 90.0,
+        "min_deg": -120.0,
+        "max_deg": 120.0,
+        "positive_dir": "CCW",
+        "reduction_ratio": 26.85,
+        "max_speed_deg_s": 88.70000000000007,
+        "accel_deg_s2": 180.0,
+        "motor_current_a": 1.0,
+        "steps_per_deg": 238.67
+      },
+      {
+        "name": "J6",
+        "home_deg": 0.0,
+        "min_deg": -360.0,
+        "max_deg": 360.0,
+        "positive_dir": "CW",
+        "reduction_ratio": 51.0,
+        "max_speed_deg_s": 50.0,
+        "accel_deg_s2": 240.0,
+        "motor_current_a": 0.8,
+        "steps_per_deg": 453.33
+      }
+    ],
+    "dh_table": [
+      [0.0, 90.0, 155.0, 0.0],
+      [200.0, 0.0, 0.0, 0.0],
+      [40.0, 90.0, 40.0, 0.0],
+      [0.0, -90.0, 180.0, 0.0],
+      [0.0, 90.0, 0.0, 0.0],
+      [0.0, 0.0, 110.0, 0.0]
+    ],
+    "base_origin_mm": [-170.0, -120.0, 0.0],
+    "build_plate_mm": [220.0, 220.0, 180.0],
+    "link_clearance_mm": 18.0,
+    "wrist_clearance_mm": 42.0,
+    "elbow_clearance_mm": 58.0,
+    "tool_backoff_mm": 24.0,
+    "wrist_backoff_mm": 76.0,
+    "nozzle_lead_blend": 0.14,
+    "nozzle_side_blend": 0.05,
+    "wrist_path_blend": 0.48,
+    "wrist_side_blend": 0.22,
+    "wrist_radial_blend": 0.12,
+    "wrist_down_blend": 0.82
+  },
+  "tool": {
+    "name": "FDM 喷头",
+    "nozzle_diameter_mm": 0.4,
+    "tcp_offset_mm": [0.0, 0.0, 0.0],
+    "nozzle_mount_angle_deg": 90.0,
+    "safe_lift_mm": 12.0,
+    "extrusion_max_mm_s": 8.0
+  },
+  "material": {
+    "name": "PLA 演示材料",
+    "nozzle_temp_c": 205,
+    "bed_temp_c": 60,
+    "chamber_temp_c": 25,
+    "fan_pwm": 180,
+    "retract_len_mm": 1.2,
+    "retract_speed_mm_min": 1800,
+    "notes": "用于演示和离线回放。"
+  },
+  "process": {
+    "name": "机械臂空间打印演示",
+    "layer_height_mm": 0.35,
+    "line_width_mm": 0.48,
+    "print_speed_mm_s": 28.0,
+    "travel_speed_mm_s": 65.0,
+    "flow_override_pct": 100,
+    "speed_override_pct": 100,
+    "pressure_advance": 0.0,
+    "extrusion_multiplier": 1.0,
+    "z_hop_mm": 0.8,
+    "nozzle_dwell_ms": 0,
+    "notes": "先用于答辩演示，真实打印前需按实际材料再次标定。"
+  }
+}
+
