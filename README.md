@@ -13,7 +13,7 @@
 
 本仓库是从原课程资料中拆分整理后的 GitHub 版本，只保留上位机程序、演示资源和说明文档，便于独立运行、展示和持续更新。
 
-![上位机总览界面](demo_assets/host_smoke_preview.png)
+![上位机总览界面](demo_assets/mainnnn.jpg)
 
 ## 项目定位
 
